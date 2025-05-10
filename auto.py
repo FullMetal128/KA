@@ -14,7 +14,7 @@ def read_parameters_from_file(filename):
         q = int(lines[0])
         m, n, k = map(int, lines[1].split())
         index = 2
-        A = [list(map(int, lines[i].split())) for i in range(index, index + n)] #потом разобраться с m, n, k, для считывания корректных матриц
+        A = [list(map(int, lines[i].split())) for i in range(index, index + n)]
         index += n
         B = [list(map(int, lines[i].split())) for i in range(index, index + k)]
         index += k
